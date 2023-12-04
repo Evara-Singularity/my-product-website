@@ -1,0 +1,26 @@
+<!-- Product Description -->
+<!-- <h1>Specs holder/pouch</h1>
+<p>Description: This is a pouch or holder to stor any kind of glass or goggle.</p>
+<img src="../../assets/productImage.png" alt="Product Image" /> -->
+HNY presents
+<div class="product-section">
+    <h1>Specs holder/pouch</h1>
+    <img src="../../assets/productImage.png" alt="Product Image" class="product-image"/>
+    <p>Description: This is a pouch to store any kind of glass or goggle.</p>
+   
+  </div>
+
+<!-- Query Form -->
+<h2>Place a query:</h2>
+<form (submit)="submitQuery()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="query.name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="query.email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" [(ngModel)]="query.message" required></textarea>
+
+    <button type="submit">Submit</button>
+</form>
